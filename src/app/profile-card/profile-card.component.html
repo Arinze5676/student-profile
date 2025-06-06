@@ -1,0 +1,20 @@
+
+<div [style.background-color]="isback ? 'black' : 'white'  " class="maindiv">
+
+  <h1>Profile Card</h1>
+
+ <img [src]="profileImageUrl" alt="profile picture" [style.width.px]="picwidth" [style.height.px]="picheight" [style.border-radius.px]="picradius">
+  
+ <br>
+
+<input type="text" (input)="onNameInput($event)" placeholder="Enter username">
+<p>Welcome, {{ name }}</p>
+
+
+
+ <div [style.font-size.px]="biofont">Passionate web developer who loves Angular</div>
+
+ <button>Login</button>
+
+ 
+</div>
